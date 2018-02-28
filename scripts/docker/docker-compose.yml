@@ -4,11 +4,5 @@ eurekaserver:
   mem_limit: 1073741824
   ports:
     - "8761:8761"
-  networks:
-    - net
   hostname: eurekaserver
-  container_name: eurekaserver
-
-networks:
-  net:
-    driver: bridge        
+  container_name: eurekaserver    
