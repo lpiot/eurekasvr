@@ -1,5 +1,8 @@
 eurekaserver:
-   image:   anthonydenecheau/scc-eurekasvr:${BUILD_NAME}
-   mem_limit: 1073741824
-   ports:
-       - "8761:8761"
+  container_name: eurekaserver
+  dns: 8.8.8.8
+  restart: always
+  image:   anthonydenecheau/scc-eurekasvr:${BUILD_NAME}
+  mem_limit: 1073741824
+  ports:
+    - "8761:8761"
