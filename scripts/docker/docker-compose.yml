@@ -1,8 +1,0 @@
-eurekaserver:
-  restart: always
-  image:   anthonydenecheau/scc-eurekasvr:${BUILD_NAME}
-  mem_limit: 1073741824
-  ports:
-    - "8761:8761"
-  hostname: eurekaserver
-  container_name: eurekaserver    
