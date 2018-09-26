@@ -24,7 +24,7 @@ env:
   - secure: sccuyDfQNilEe7P4vdgwtEM3dQRWSNVTyKT+/srUr+nshBj/+dX3W3Tdk/51ovGkRpqRGtCG5nrvxZjiix6uGrMib99Ct1h1GVILIHTRD0m7kCVlYo5lE2TXBOOAMkc3+B42p551hZ7wvuTxIntl8cTsq41GUzh69Q5v+fR/YCvcZf7rR4QuAqMQtL8JMUPnAuMsPcPP/v0FugnxuEgf6ydY7sVZiXwzQC0q5jVggOQqVM4UQxHHfTbCu44li2O09BuOsj18Ti92rpxaJmFE0/ZgfEWcz/CCdPH24ZlE2d192xvuf85TJOtHcxN/ayKM2UP17ljfLnD2/M+UNLeN9QRmysHQvh0LjmKCUMiyKV9DeZKg+HxF20zSKww96vDBLwP8QC7DMEnq2P6p9uh3Saw7UrP278ttNdTtOXR6N++fe+0BMzVxIF317UnNz7zkatZQtwU8BooGXHiRzKfclmKJ1AOIJrK77bE0Nz2ja8sq1+GXIxzeVOpFaUJ/fouoEqUR3wELaqB0CaHVzCvjpqANqAY/P7L/jChHvvONhKHb/WXAPFH7vHot03yoQ8IT9vsLFiSHwg5W26iAaaPEpHuGYdKryk/uT7/rS+T6YO58u5OBFxTYM9BKComEXd8d7EhffQawyLA9S9A7tcqP7YOUFmktqCiXFkrsRRyEIW0=
 before_install:
 - gem install travis -v 1.8.5 --no-rdoc --no-ri
-- export BUILD_NAME=eurekasvr-$TRAVIS_BRANCH-$(date -u "+%Y%m%d%H%M%S")-$TRAVIS_BUILD_NUMBER
+- export BUILD_NAME=scc-eurekasvr-$TRAVIS_BRANCH-$(date -u "+%Y%m%d%H%M%S")-$TRAVIS_BUILD_NUMBER
 script:
 - sh scripts/travis/tag_build.sh
 - sh scripts/travis/build_services.sh
