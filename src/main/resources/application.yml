@@ -1,6 +1,6 @@
 #Default port is 8761
 server:
-  port: 80
+  port: 8080
 
 eureka:
   client:
@@ -11,7 +11,7 @@ eureka:
     eviction-interval-timer-in-ms: 30000
     waitTimeInMsWhenSyncEmpty: 0
   serviceUrl:
-    defaultZone: http://localhost:80
+    defaultZone: http://localhost:8080
 
 #Setting logging levels
 logging:
